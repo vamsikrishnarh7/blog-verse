@@ -16,16 +16,30 @@ const Navbar = () => {
   return (
     <>
       <div className="shadow-sm  ">
-        <nav className="py-2 px-[5%] flex items-center justify-between">
-          <div className="flex items-center gap-2">
+        <nav className="py-2 px-[5%] max-w-[1400px] mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2 md:hidden">
             <AiOutlineMenu size={25} onClick={handleNav} />
             <img
               src="./icons/blog-verse.svg"
               className="w-[40px] h-[50px] rounded"
             />
+            
+          </div>
+          <div className="hidden md:flex">
+            <img
+                src="./icons/blog-verse.svg"
+                className="w-[40px] h-[50px] rounded mr-5"
+            />
+            <div className="flex items-center border px-2 hover:border-gray-400 rounded-md focus:ring-1 focus:ring-indigo-300">
+              <input type="text" placeholder="Search..." className="text-md focus:outline-none mr-2 my-0 w-[400px] md:w-[350px]" />
+              <div className="hover:bg-indigo-100 p-2 self-center"><FiSearch size={20} /> </div>
+            </div>
           </div>
           <div className="flex items-center gap-2">
-            <FiSearch size={25} />
+            <div className="md:hidden"><FiSearch size={25} /> </div>
+            <button className="hidden md:block p-2 rounded focus:bg-indigo-200 focus:underline">
+            Login
+          </button>
             <button 
               className="text-indigo-600 border border-indigo-600 font-bold p-2 rounded focus:bg-indigo-600 focus:text-white focus:underline"
               onClick={handleCreateAccount}>

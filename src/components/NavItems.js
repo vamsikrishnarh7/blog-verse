@@ -4,19 +4,19 @@ const NavItems = () => {
   return (
     <>
       <div className="mx-5 flex flex-col gap-5 mb-10">
-        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2  rounded">
+        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2 hover:bg-indigo-100 hover:underline hover:text-indigo-900  rounded">
           <FcHome size={25} />
           <p>Home</p>
         </button>
-        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2  rounded">
+        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2 hover:bg-indigo-100 hover:underline hover:text-indigo-900 rounded">
           <img src="./icons/tag-icon.png" className="w-[25px]" />
           <p>Tags</p>
         </button>
-        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2  rounded">
+        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2 hover:bg-indigo-100 hover:underline hover:text-indigo-900 rounded">
           <img src="./icons/blog-verse.svg" className="w-[25px] rounded" />
           <p>About</p>
         </button>
-        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2  rounded">
+        <button className="flex items-center gap-2 focus:bg-indigo-200 w-full py-2 hover:bg-indigo-100 hover:underline hover:text-indigo-900 rounded">
           <FcIdea size={25} />
           <p>FAQ</p>
         </button>
