@@ -17,7 +17,7 @@ const Home = () => {
     <div className="bg-[#f5f5f5] py-5">
       <div className="max-w-[1400px] mx-auto lg:px-[5%] flex gap-5">
         {/* Navbar for lg devices */}
-        <div className="hidden md:block min-w-[200px] w-[20%]">
+        <div className="hidden bg-[#f5f5f5] md:block min-w-[200px] w-[20%]">
           <div className="bg-white mx-1 p-5 rounded mb-3 shadow-sm border">
             <h1 className="text-2xl font-bold">Blog Verse</h1>
             <h3 className="text-gray-600 mb-3">

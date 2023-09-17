@@ -19,10 +19,12 @@ const Navbar = () => {
         <nav className="py-2 px-[5%] max-w-[1400px] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 md:hidden">
             <AiOutlineMenu size={25} onClick={handleNav} />
-            <img
-              src="./icons/blog-verse.svg"
-              className="w-[40px] h-[50px] rounded"
-            />
+            <Link to="/">
+              <img
+                src="./icons/blog-verse.svg"
+                className="w-[40px] h-[50px] rounded"
+              />
+            </Link>
             
           </div>
           <div className="hidden md:flex">
